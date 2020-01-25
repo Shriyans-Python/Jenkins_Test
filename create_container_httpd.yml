@@ -1,0 +1,13 @@
+- name: Run htppd container
+  hosts: all
+  tasks:
+  - name: Run Image
+    docker_container:
+      name: web
+      image: webimage
+      state: started
+      ports: 
+      - "5650:80"
+      tty: true
+      detach: true    
+  

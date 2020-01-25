@@ -1,0 +1,8 @@
+- name: Pull CentOS image
+  hosts: all
+  tasks:
+  - name: Cent OS image
+    docker_image:
+      name: centos:latest
+      
+        

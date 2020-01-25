@@ -1,0 +1,8 @@
+- name: Create Image From Dockerfile
+  hosts: all
+  tasks:
+    - name: Create Image 
+      docker_image:
+        path: /root 
+        name: webimage
+        
